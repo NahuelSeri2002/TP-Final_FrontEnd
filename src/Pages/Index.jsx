@@ -1,6 +1,11 @@
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 function Index(){
+    useEffect(() => {
+        document.title = 'Inicio | MusicBoxed';
+        }, []);
+
     return(
         <section className="hero">
             <h1>MusicBoxed</h1>

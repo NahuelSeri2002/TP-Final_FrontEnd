@@ -22,9 +22,9 @@ function Layout(){
                 <ul className="footer-nav">
                     <li><Link to="/">Inicio</Link></li>
                     <li><Link to='/puntuacion'>Puntuacion</Link></li>
-                    <li><Link></Link></li>
-                    <li><Link></Link></li>
-                    <li><Link></Link></li>
+                    <li><Link to='/galeria'>Galeria</Link></li>
+                    <li><Link to='/iniciar-sesion'>Iniciar Sesion</Link></li>
+                    <li><Link to='/registrarse'>Registrarse</Link></li>
                 </ul>
                 <div className="footer-social">
                     <Link to="#" aria-label="Instagram" className="instagram"><i className="fa-brands fa-instagram"></i></Link>
