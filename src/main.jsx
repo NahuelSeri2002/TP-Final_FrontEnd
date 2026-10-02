@@ -8,6 +8,7 @@ import Puntuacion from './Pages/Puntuacion'
 import Registrarse from './Pages/Registrarse'
 import IniciarSesion from './Pages/IniciarSesion'
 import Galeria from './Pages/Galeria'
+import { AuthProvider } from './context/AuthContext';
 
 const mapasRutas = createBrowserRouter([
   {
@@ -26,6 +27,8 @@ const mapasRutas = createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={mapasRutas}/>
+    <AuthProvider>
+      <RouterProvider router={mapasRutas}/>
+    </AuthProvider>
   </StrictMode>,
 )
