@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { useAuth } from "../context/AuthContext"
+import { useAuth } from "../hooks/useAuth"
 import { useNavigate } from "react-router-dom"
 
 
@@ -35,8 +35,6 @@ const Registrarse = () =>{
     <h1 className="page-title">Registrarse</h1>
       <section className="registrarse">
         <form onSubmit={handleSubmit} className="default-form">
-          {error && <p className="error-message">{error}</p>}
-
           <div>
             <label htmlFor="nombre">Nombre de usuario</label>
             <input
@@ -75,6 +73,8 @@ const Registrarse = () =>{
               required
             />
           </div>
+
+           {error && <p className="error-message">{error}</p>}
 
           <div className="enviar">
             <button type="submit" className="envio btn btn-form">

@@ -2,7 +2,7 @@ import { Link, Outlet } from "react-router-dom";
 
 function Layout(){
     return(
-        <>
+        <div className="app-layout">
             <header>
                 <nav className="navbar">
                     <Link to="/" className="logo"><i className="fa-regular fa-headphones"></i>MusicBoxed</Link>
@@ -32,7 +32,7 @@ function Layout(){
                 </div>
                 <p>© 2026 MusicBoxed. Todos los derechos reservados</p>
             </footer>
-        </>
+        </div>
     )
 }
 

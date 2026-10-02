@@ -53,6 +53,16 @@ body{
     overflow-x: hidden;
 }
 
+.app-layout{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main{
+    flex: 1;
+}
+
 h1,h2,h3{
     font-family: var(--font-title);
     font-weight: 800; 
@@ -153,6 +163,10 @@ ul{
     background-color: var(--border-color);
     color: var(--text-primary);
     font-size: 1rem;
+}
+
+.default-form .error-message{
+    color: var(--accent-primary-hover);
 }
 
 .enviar {

@@ -8,7 +8,7 @@ import Puntuacion from './Pages/Puntuacion'
 import Registrarse from './Pages/Registrarse'
 import IniciarSesion from './Pages/IniciarSesion'
 import Galeria from './Pages/Galeria'
-import { AuthProvider } from './context/AuthContext';
+import { AuthProvider } from './context/AuthProvider';
 
 const mapasRutas = createBrowserRouter([
   {
